@@ -9,6 +9,11 @@ use App\Models\Project; // Importa il modello Project
 class Type extends Model
 {
     use HasFactory;
+
+    protected $fillable = [
+        'name',
+        'slug'
+    ];
     
     public function projects()
     {
